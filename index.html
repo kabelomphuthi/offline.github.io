@@ -1,590 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-
-    <title>Frank Nkwanyane | Profile Website</title>
-
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
-
-    <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Material Design Bootstrap -->
-    <link href="css/mdb.min.css" rel="stylesheet">
-
-    <!-- Template styles -->
-    <link href="css/style.css" rel="stylesheet">
-    <!-- main.css -->
-    <link href="css/main.css" rel="stylesheet">
-
-    <!-- reset.css -->
-    <!--<link href="css/reset.css" rel="stylesheet"> -->
-
-    <!--jquery-->
-    <script type="text/javascript" src="js/jquery.min.js"></script>
-    <!-- typed.js plugin -->
-    <script type="text/javascript" src="js/typed.js"></script>
-
-    <script type="text/javascript">
-        $(function(){
-          $("#typed").typed({
-            stringsElement: $('#typed-strings'),
-            contentType: 'html',
-            typeSpeed: 95,
-            backDelay: 100,
-            startDelay: 650,
-            startDelay: 550,
-            loop: true
-          });
-        });
-    </script>
-
-    <style>
-
-    /* code for animated blinking cursor */
-          .typed-cursor{
-              opacity: 1;
-              font-weight: 100;
-              -webkit-animation: blink 0.7s infinite;
-              -moz-animation: blink 0.7s infinite;
-              -ms-animation: blink 0.7s infinite;
-              -o-animation: blink 0.7s infinite;
-              animation: blink 0.7s infinite;
-          }
-          @-keyframes blink{
-              0% { opacity:1; }
-              50% { opacity:0; }
-              100% { opacity:1; }
-          }
-          @-webkit-keyframes blink{
-              0% { opacity:1; }
-              50% { opacity:0; }
-              100% { opacity:1; }
-          }
-          @-moz-keyframes blink{
-              0% { opacity:1; }
-              50% { opacity:0; }
-              100% { opacity:1; }
-          }
-          @-ms-keyframes blink{
-              0% { opacity:1; }
-              50% { opacity:0; }
-              100% { opacity:1; }
-          }
-          @-o-keyframes blink{
-              0% { opacity:1; }
-              50% { opacity:0; }
-              100% { opacity:1; }
-          }
-
-
-    </style>
-
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name=viewport content="width=device-width, initial-scale=1">
+  <title>UpUp - The Offline First Library</title>
+  <meta name="description" content="A JavaScript library that makes sure your users can always access your site, even when offline." />
+  <meta property="og:image" content="https://www.talater.com/upup/img/upup-screenshot.jpg"/>
+  <meta property="og:title" content="UpUp - Offline First in 1 line of Javascript"/>
+  <meta property="og:description" content="Let users visit your site, even when they're on a plane over the Atlantic, or 20,000 leagues under the sea. #OfflineFirst"/>
+  <meta property="og:url" content="http://upup.rocks"/>
+  <meta property="og:site_name" content="UpUp"/>
+  <meta property="fb:admins" content="568390229" />
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/online.min.css">
+  <link href='//fonts.googleapis.com/css?family=Lato:300,400,700,300italic' rel='stylesheet' type='text/css'>
+  <meta http-equiv="cache-control" content="max-age=0" />
+  <meta http-equiv="cache-control" content="no-cache" />
+  <meta http-equiv="expires" content="0" />
+  <meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
+  <meta http-equiv="pragma" content="no-cache" />
 </head>
-
 <body>
-
-
-    <!--Navbar-->
-    <nav class="navbar navbar-dark navbar-fixed-top scrolling-navbar green">
-
-        <!-- Collapse button-->
-        <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#collapseEx">
-            <i class="fa fa-bars"></i>
-        </button>
-
-        <div class="container">
-
-            <!--Collapse content-->
-            <div class="collapse navbar-toggleable-xs" id="collapseEx">
-                <!--Navbar Brand-->
-                <a class="navbar-brand animated bounce" href="index.html" target="_blank">Frank Nkwanyane</a>
-                <!--Links-->
-                <ul class="nav navbar-nav">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#home">Home<span class="sr-only">(current)</span></a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="#quote">Quotable</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">About Me</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#resume">Resume</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact Me</a>
-                    </li>
-                </ul>
-
-            </div>
-            <!--/.Collapse content-->
-
-        </div>
-
-    </nav>
-    <!--/.Navbar-->
-
-    <!-- Carousel Wrapper -->
-    <div id="carousel-example-2" class="carousel slide carousel-fade" data-ride="carousel">
-      <!--Indicators-->
-      <ol class="carousel-indicators">
-        <li data-target="#carousel-example-2" data-slide-to="0" class="active"></li>
-        <li data-target="#carousel-example-2" data-slide-to="1"></li>
-        <li data-target="#carousel-example-2" data-slide-to="2"></li>
-      </ol>
-   <!--/.Indicators-->
-
-
-    <!--Slides-->
-    <div class="carousel-inner" role="listbox">
-        <!--First slide-->
-        <div class="carousel-item active">
-            <!--Mask color-->
-            <div class="view hm-black-strong">
-                <img src="img/journa.jpg" style="width: 100% \9;" class="img-fluid" alt="Responsive image">
-                <div class="full-bg-img">
-                </div>
-            </div>
-            <!--Caption-->
-            <div class="carousel-caption">
-                <div class="animated fadeInDown">
-                    <h3 class="h3-responsive">I am a Second-year Journalism student </h3>
-                </div>
-                <div class="social row">
-                  <div class="col-md-3">
-                  <!-- Facebook -->
-                  <button type="button" class="btn btn-lg primary-color-dark btn-fb"><i class="fa fa-facebook left"></i> Facebook</button>
-                  </div>
-                  <div class="col-md-3">
-                  <!--Twitter -->
-                  <button type="button" class="btn btn-lg btn-tw btn-primary "><i class="fa fa-twitter left"></i> Twitter</button>
-                  </div>
-                  <div class="col-md-3">
-                  <!--Linkedin -->
-                  <button type="button" class="btn btn-lg btn-tw info-color "><i class="fa fa-instagram left"></i>Instagram</button>
-                  </div>
-                </div>
-            </div>
-            <!--Caption-->
-        </div>
-        <!--/First slide-->
-
-        <!--Second slide-->
-        <div class="carousel-item">
-            <!--Mask color-->
-            <div class="view hm-black-strong">
-                <img src="img/journa.jpg" class="img-fluid" style="width: 100% \9;" alt="Responsive image">
-                <div class="full-bg-img">
-                </div>
-            </div>
-            <!--Caption-->
-            <div class="carousel-caption">
-                <div class="animated fadeInDown">
-                    <h3 class="h3-responsive"> </h3>
-                </div>
-
-                <div class="social row">
-                  <div class="col-md-3">
-                  <!-- Facebook -->
-                  <button type="button" class="btn btn-lg primary-color-dark btn-fb"><i class="fa fa-facebook left"></i> Facebook</button>
-                  </div>
-                  <div class="col-md-3">
-                  <!--Twitter -->
-                  <button type="button" class="btn btn-lg btn-tw btn-primary "><i class="fa fa-twitter left"></i> Twitter</button>
-                  </div>
-                  <div class="col-md-3">
-                  <!--Linkedin -->
-                  <button type="button" class="btn btn-lg btn-tw info-color "><i class="fa fa-linkedin left"></i>Linkedin</button>
-                  </div>
-                </div>
-
-            </div>
-            <!--Caption-->
-        </div>
-        <!--/Second slide-->
-
-        <!--Third slide-->
-        <div class="carousel-item">
-            <!--Mask color-->
-            <div class="view hm-black-strong">
-                <img src="img/journa.jpg" class="img-fluid" alt="Responsive image">
-                <div class="full-bg-img">
-                </div>
-            </div>
-            <!--Caption-->
-            <div class="carousel-caption">
-                <div class="animated fadeInDown">
-                    <h3 class="h3-responsive">Passionate about Physics, Education and Software Development.</h3>
-                </div>
-
-                <div class="social row">
-                  <div class="col-md-3">
-                  <!-- Facebook -->
-                  <button type="button" class="btn btn-lg primary-color-dark btn-fb"><i class="fa fa-facebook left"></i> Facebook</button>
-                  </div>
-                  <div class="col-md-3">
-                  <!--Twitter -->
-                  <button type="button" class="btn btn-lg btn-tw btn-primary "><i class="fa fa-twitter left"></i> Twitter</button>
-                  </div>
-                  <div class="col-md-3">
-                  <!--Linkedin -->
-                  <button type="button" class="btn btn-lg btn-tw info-color "><i class="fa fa-linkedin left"></i>Linkedin</button>
-                  </div>
-                </div>
-
-            </div>
-            <!--Caption-->
-        </div>
-        <!--/Third slide-->
-    </div>
-    <!--/.Slides-->
-
-    <!--Controls-->
-       <a class="left carousel-control" href="#carousel-example-2" role="button" data-slide="prev">
-           <span class="icon-prev" aria-hidden="true"></span>
-           <span class="sr-only">Previous</span>
-       </a>
-       <a class="right carousel-control" href="#carousel-example-2" role="button" data-slide="next">
-           <span class="icon-next" aria-hidden="true"></span>
-           <span class="sr-only">Next</span>
-       </a>
-       <!--/.Controls-->
+  <header class="container-fluid">
+    <img class="img-responsive center-block" src="img/logo.png" alt="upup">
+    <h1 class="center-block">a tiny script that makes sure your site is always there for your users</h1>
+    <h2 class="center-block">even when they're on a plane, or 20,000 leagues under the sea</h2>
+  </header>
+  <div class="show-and-tell">
+    <video class="img-responsive center-block" onplaying="this.controls=false;" onclick="this.play();" loop="true" src="offline-first-with-upup.mp4" poster="img/upup-poster.jpg"></video>
   </div>
-    <!--/.Carousel Wrapper -->
 
-    <div id="home" class="section scrollspy">
+  <div class="container narrower">
+    <div class="row">
+      <p>Your users are no longer sitting at their desktops, with a wire connecting them to the internet.</p>
+      <p>They are visiting your site from a phone in an elevator, from their tablet on the subway, or on their laptop while they sit cramped into seat 25 E.</p>
+      <p>This is why modern browsers support ServiceWorkers, a new technology which lets you serve your content to your users, even when they are offline.</p>
+      <p>UpUp is a free, open source project which makes using this modern magic as simple as calling one command.</p>
+  <pre><code>
+  <span class="html">&lt;script src="<strong>/upup.min.js</strong>"&gt;&lt;/script&gt;
+  &lt;script&gt;</span>
+    UpUp.start({
+      '<strong>content-url</strong>': '<strong>offline.html</strong>' <span class="comment">// show this page to offline users</span>
+    });
+  <span class="html">&lt;/script&gt;</span>
+  </code></pre>
+
+      <p>While easy to pick up, UpUp is powerful enough to support anything from showing simple messages, to making fully functional single page applications available offline, with data customized for each of your users.</p>
+
+      <h4>Ready to get started?</h4>
+
+      <div class="row home-icons-row">
+        <div class="col-sm-4">
+          <a href="getting-started-with-offline-first.html">
+            <div class="callout callout-3">
+              <img src="img/icon-tutorial.png" alt="Offline First Tutorial">Try the Tutorial
+            </div>
+          </a>
+        </div>
+        <div class="col-sm-4">
+          <a href="https://github.com/TalAter/UpUp/blob/master/docs/README.md">
+            <div class="callout callout-1">
+              <img src="img/icon-docs.png" alt="UpUp API Docs">API Docs
+            </div>
+          </a>
+        </div>
+        <div class="col-sm-4">
+          <a href="https://github.com/TalAter/UpUp/">
+            <div class="callout callout-2">
+              <img src="img/icon-source.png" alt="OfflineFirst on GitHub">GitHub
+            </div>
+          </a>
+        </div>
+      </div>
+
+
+      <p>UpUp is a <strong>free</strong>, <strong>open source</strong>, community effort.</p>
+      <p>Please help us start the <strong>Offline First</strong> revolution:</p>
+      <div class="row home-icons-row">
+        <div class="col-sm-4 text-center">
+          <iframe src="https://ghbtns.com/github-btn.html?user=TalAter&repo=UpUp&type=star&count=true&size=large" frameborder="0" scrolling="0" width="160px" height="30px"></iframe>
+        </div>
+        <div class="col-sm-4 text-center">
+          <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://upup.rocks" data-text="Control how users see your site… even when they're over the Atlantic or 20k leagues under the sea" data-size="large" data-hashtags="OfflineFirst" data-counturl="https://www.talater.com/upup/">Tweet</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+        </div>
+        <div class="col-sm-4 text-center">
+          <div id="fb-root"></div>
+          <script>(function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.4";
+            fjs.parentNode.insertBefore(js, fjs);
+          }(document, 'script', 'facebook-jssdk'));</script>
+          <div class="fb-like" data-href="http://upup.rocks" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div>
+        </div>
+      </div>
 
     </div>
+  </div>
 
-
-    <div id="quote" class="section scrollspy">
-      <h2 class="header">Quotable</h2>
-      <p class="subhead">My Favourite Quotes.</p>
-      <div class="container">
-        <div class="row">
-        <div class="col-md-10">
-        <div class="text-body">
-        <div id="typed-strings">
-        <p class="qoute">"In time, we shall be in a position to bestow on South Africa the greatest possible gift- a more human face"- Steve Biko</p>
-        <p> "You are either alive and proud or you are dead, and when you are dead, you can't care anyway."- Steve Biko</p>
-        </div>
-        <span id="typed"></span>
-       </div>
-        </div>
-        </div>
-      </div>
-
-
+  <div class="container footer text-center narrower">
+    <hr>
+    <div class="row menu">
+      <ul class="nav nav-pills nav-justified">
+        <li>Home</li>
+        <li><a href="getting-started-with-offline-first.html">Tutorial</a></li>
+        <li><a href="https://github.com/TalAter/UpUp/raw/master/dist/upup.zip">Download UpUp.js</a></li>
+        <li><a href="https://github.com/TalAter/UpUp/blob/master/docs/README.md">API Docs</a></li>
+        <li><a href="https://github.com/TalAter/UpUp/">GitHub</a></li>
+        <li><a href="https://twitter.com/TalAter">Twitter</a></li>
+        <li><a href="mailto:tal@talater.com">Email</a></li>
+      </ul>
     </div>
-
-    <div id="about" class="section scrollspy">
-      <h2 class="header">About Me</h2>
-      <p class="subhead">A little bit about myself.</p>
-      <div class="container">
-      <div class="row">
-      <div class="col-md-5 col-md-offset-4">
-
-        <!--Card-->
-        <div class="card testimonial-card wow slideInLeft">
-
-            <!--Bacground color-->
-            <div class="card-up default-color-dark">
-            </div>
-
-            <!--Avatar-->
-            <div class="avatar"><img src="img/tii.jpg" height="140px" width="130px" class="img-circle img-responsive">
-            </div>
-
-            <div class="card-block">
-                <!--Name-->
-                <h4 class="card-title">Frank Nkwanyane</h4>
-                <hr>
-                <!--Quotation-->
-                <p><i class="fa fa-quote-left"></i>Second-Year Journalism student</p>
-            </div>
-
-        </div>
-        <!--/.Card-->
-
-      </div>
-      </div>
-      </div>
-
-
-
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <h3 class="content">I am second year Journalism student from Tshwane University of Technology. I am passionate about helping those who are in need of help as that is the greatest change I can offer. </h3>
-            <h3></h3>
-          </div>
-        </div>
-        </div>
+    <div class="row">
+      <p>&copy; 2016 Tal Ater. All rights reserved. The <a href="https://github.com/TalAter/UpUp">UpUp source code</a> is free to use under the <a href="https://github.com/TalAter/UpUp/blob/master/LICENSE">MIT license</a>.</p>
     </div>
+  </div>
 
-    <div id="resume" class="section scrollspy">
-      <h2 class="header">Resume</h2>
-      <p class="subhead">Most of the things I've done so far.</p>
-      <div class="container">
-      <div class="row">
+  <!-- This is our simple implementation of UpUp for this site -->
+  <script src="upup.min.js"></script>
+  <script>
+    // Let's turn on debugging messages
+    UpUp.debug();
 
+    // Let's start UpUp with some basic settings
+    UpUp.start({
+      'content-url': 'offline.html',
+      'assets': ['css/offline.css', 'css/bootstrap.min.css', 'img/mb-offline.png', 'img/logo.png', 'img/sunset.jpg']
+    });
+  </script>
 
-	<section id="cd-timeline" class="cd-container">
-		<div class="cd-timeline-block">
-			<div class="cd-timeline-img cd-picture">
-				<img src="img/cd-icon-picture.svg" alt="Picture">
-			</div> <!-- cd-timeline-img -->
+  <!-- Unrelated sugar to make the page look nice -->
+  <script src="js/online.js"></script>
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-			<div class="cd-timeline-content">
-				<h2>Born Day</h2>
-				<p>Born on the 24th of December 1991</p>
-				<!--<a href="#0" class="cd-read-more">Read more</a>-->
-				<span class="cd-date">24 Dec 1991</span>
-			</div> <!-- cd-timeline-content -->
-		</div> <!-- cd-timeline-block -->
-
-		<div class="cd-timeline-block">
-			<div class="cd-timeline-img cd-movie">
-				<img src="img/cd-icon-movie.svg" alt="Movie">
-			</div> <!-- cd-timeline-img -->
-
-			<div class="cd-timeline-content">
-				<h2>Schooling</h2>
-				<p>Attended Selang Primary, an elementary school in Leboneng, for 6 years. In 2004 I went to Madisong Middle for 3 years. In 2007 I attended Makgetse High in the Natural Sciences Faculty for a period of 3 years. </p>
-				<!--<a href="#0" class="cd-read-more">Read more</a>-->
-				<span class="cd-date">1998- 2009</span>
-			</div> <!-- cd-timeline-content -->
-		</div> <!-- cd-timeline-block -->
-
-		<div class="cd-timeline-block">
-			<div class="cd-timeline-img cd-picture">
-				<img src="img/cd-icon-picture.svg" alt="Picture">
-			</div> <!-- cd-timeline-img -->
-
-			<div class="cd-timeline-content">
-				<h2>University Career</h2>
-				<p>Studied a BSc in Physics at the Univrsity of Pretoria for a period of four and half years. I particularly enjoyed Experimental Physics in Electronic Materials.</p>
-			<!--	<a href="#0" class="cd-read-more">Read more</a> -->
-				<span class="cd-date">Feb 2010 to June 2014</span>
-			</div> <!-- cd-timeline-content -->
-		</div> <!-- cd-timeline-block -->
-
-		<div class="cd-timeline-block">
-			<div class="cd-timeline-img cd-location">
-				<img src="img/cd-icon-location.svg" alt="Location">
-			</div> <!-- cd-timeline-img -->
-
-			<div class="cd-timeline-content">
-				<h2>Title of section 4</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde? Iste voluptatibus minus veritatis qui ut.</p>
-				<a href="#0" class="cd-read-more">Read more</a>
-				<span class="cd-date">Feb 14</span>
-			</div> <!-- cd-timeline-content -->
-		</div> <!-- cd-timeline-block -->
-
-		<div class="cd-timeline-block">
-			<div class="cd-timeline-img cd-location">
-				<img src="img/cd-icon-location.svg" alt="Location">
-			</div> <!-- cd-timeline-img -->
-
-			<div class="cd-timeline-content">
-				<h2>Title of section 5</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum.</p>
-				<a href="#0" class="cd-read-more">Read more</a>
-				<span class="cd-date">Feb 18</span>
-			</div> <!-- cd-timeline-content -->
-		</div> <!-- cd-timeline-block -->
-
-		<div class="cd-timeline-block">
-			<div class="cd-timeline-img cd-movie">
-				<img src="img/cd-icon-movie.svg" alt="Movie">
-			</div> <!-- cd-timeline-img -->
-
-			<div class="cd-timeline-content">
-				<h2>Final Section</h2>
-				<p>This is the content of the last section</p>
-				<span class="cd-date">Feb 26</span>
-			</div> <!-- cd-timeline-content -->
-		</div> <!-- cd-timeline-block -->
-	</section> <!-- cd-timeline -->
-
-
-      </div>
-      </div>
-    </div>
-
-
-        <div id="contact" class="section scrollspy">
-          <h2 class="header wow fadeInUp">Contact Me</h2>
-          <p class="subhead">Get hold of me.</p>
-          <div class="container">
-          <div class="row">
-          <!-- First Column -->
-          <div class="col-md-8">
-            <form>
-            <!-- First row -->
-            <div class="row">
-            <div class="col-md-5">
-              <div class="md-form">
-              <div class="md-form">
-                <i class="fa fa-user prefix"></i>
-                <input type="text" id="form41" class="form-control">
-                <label for="form41" class="">Your name</label>
-              </div>
-             </div>
-            </div>
-
-            <!--Second column-->
-            <div class="col-md-5">
-                <div class="md-form">
-                  <div class="md-form">
-                      <i class="fa fa-envelope prefix"></i>
-                      <input type="text" id="form51" class="form-control">
-                      <label for="form51" class="">Your email</label>
-                  </div>
-                </div>
-            </div>
-            <!--/.First row -->
-
-            <!--Second row-->
-            <div class="row">
-              <div class="col-md-8">
-                <div class="md-form">
-                <i class="fa fa-pencil prefix"></i>
-                <input type="text" id="form51" class="form-control">
-                <label for="form51" class="">Subject</label>
-               </div>
-              </div>
-            </div>
-            <!--/Second row-->
-
-            <!--Third row-->
-          <div class="row">
-            <!--First column-->
-             <div class="col-md-8">
-
-                <div class="md-form">
-                  <i class="fa fa-pencil prefix"></i>
-                  <textarea type="text" id="form76" class="md-textarea"></textarea>
-                  <label for="form76">Your message</label>
-                </div>
-
-              </div>
-            </div>
-            <!--/.Third row-->
-              </div>
-            </form>
-            <div class="center-on-small-only">
-              <a class="btn btn-primary">Send Message</a>
-            </div>
-          </div>
-          <!--/. First Column -->
-
-          <!--Second column-->
-              <div class="col-md-4">
-              <ul class="text-xs-center">
-              <li class="wow fadeInUp" data-wow-delay="0.2s"><i class="fa fa-map-marker"></i>
-                <p>Hatfield, Pretoria, SA</p>
-              </li>
-
-              <li class="wow fadeInUp" data-wow-delay="0.3s"><i class="fa fa-phone"></i>
-                <p>+27 73 476 8786</p>
-              </li>
-
-              <li class="wow fadeInUp" data-wow-delay="0.4s"><i class="fa fa-envelope"></i>
-                  <p>tiisetso.c.mphuthi@gmail.com</p>
-              </li>
-             </ul>
-            </div>
-          <!--.Second column-->
-          </div>
-        </div>
-        </div>
-
-    <!--Footer-->
-    <footer class="page-footer center-on-small-only">
-
-        <!--Footer Links-->
-        <div class="container-fluid">
-            <div class="row">
-
-                <!--First column-->
-                <div class="col-md-3 col-md-offset-1">
-                    <h5 class="title"></h5>
-
-                </div>
-                <!--/.First column-->
-
-                <hr class="hidden-md-up">
-
-                <!--Second column-->
-                <div class="col-md-2 col-md-offset-1">
-                    <h5 class="title">Social Media</h5>
-                    <ul>
-                        <li><a href="#!">Facebook</a></li>
-                        <li><a href="#!">Twitter</a></li>
-                        <li><a href="#!">Instagram</a></li>
-                        <li><a href="#!">Flickr</a></li>
-                    </ul>
-                </div>
-
-
-                </div>
-                <!--/.Fourth column-->
-
-            </div>
-        </div>
-        <!--/.Footer Links-->
-
-        <hr>
-
-        <!--Copyright-->
-        <div class="footer-copyright">
-            <div class="container-fluid">
-                © 2016 Copyright: <a href="#k">Idyee </a>
-
-            </div>
-        </div>
-        <!--/.Copyright-->
-
-    </footer>
-    <!--/.Footer-->
-
-
-    <!-- SCRIPTS -->
-
-    <!-- JQuery -->
-    <script type="text/javascript" src="js/jquery-2.2.3.min.js"></script>
-
-    <!-- Bootstrap tooltips -->
-    <script type="text/javascript" src="js/tether.min.js"></script>
-
-    <!-- Bootstrap core JavaScript -->
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
-
-    <!-- MDB core JavaScript -->
-    <script type="text/javascript" src="js/mdb.min.js"></script>
-
-    <!-- Modernizr -->
-    <script type="text/javascript" src="js/modernizr.js"></script>
-
-    <!--Main.js -->
-    <script type="text/javascript" src="js/main.js"></script>
-
-    <!-- wow animation -->
-    <script>
-    new WOW().init();
-    </script>
+    ga('create', 'UA-24775009-1', 'auto');
+    ga('send', 'pageview');
+  </script>
 </body>
-
 </html>
