@@ -1,42 +1,45 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>UpUp - The Offline First Library</title>
+  <title>Lonely Globe Advisor</title>
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/offline.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 </head>
 <body>
-  <header class="shortHeader">
-    <img class="img-responsive center-block" src="img/logo.png" alt="upup">
-    <h1 class="center-block">Looks like you’re somewhere without an internet connection</h1>
-  </header>
-  <div class="show-and-tell">
-    <img src="img/mb-offline.png">
+  <div class="jumbotron text-center">
+    <h1>Top Hotels in Rome</h1>
   </div>
-
-  <div class="container narrower">
+  <div class="container">
     <div class="row">
-      <p>Lucky for you, UpUp is serving you content even when you are on a plane flying over the Pacific, or 20,000 leagues under the sea.</p>
-      <p>To add the functionality you’re seeing now, we simply added a small piece of code to our site:</p>
-      <pre><code>
-      <span class="html">&lt;script src="<strong>upup.min.js</strong>"&gt;&lt;/script&gt;
-      &lt;script&gt;</span>
-        UpUp.start({
-          '<strong>content-url</strong>': '<strong>offline.html</strong>', <span class="comment">// show this page to offline users</span>
-          '<strong>assets</strong>': <span class="comment">// Save the following files to cache as well</span>
-            ['<strong>css/offline.css</strong>', '<strong>css/bootstrap.min.css</strong>', '<strong>img/mb-offline.png</strong>', '<strong>img/logo.png</strong>', '<strong>img/sunset.jpg</strong>']
-        });
-      <span class="html">&lt;/script&gt;</span>
-      </code></pre>
-      <h2 class="text-center">It's time to start the <strong>offline first</strong> revolution.</h2>
-    </div>
-  </div>
-
-  <div class="container footer text-center narrower">
-    <hr>
-    <div class="row">
-      <p>&copy; 2016 Tal Ater. All rights reserved. The <a href="https://github.com/TalAter/UpUp">UpUp source code</a> is free to use under the <a href="https://github.com/TalAter/UpUp/blob/master/LICENSE">MIT license</a>.</p>
-      <p>Sunset image used with permission from <a href="https://500px.com/ido_greiman">Ido Greiman</a>.</p>
+      <div class="col-lg-6 location">
+        <div class="panel-body">
+          <h3>Villa Domus</h3>
+          <p class="rating"><span class="badge">&#x2605;&#x2605;&#x2605;&#x2605;&#x2605;</span> 324 reviews</p>
+          <p>Via Piacenza 9, Rome, Italy</p>
+        </div>
+      </div>
+      <div class="col-lg-6 location">
+        <div class="panel-body">
+          <h3>Hotel Trivelli</h3>
+          <p class="rating"><span class="badge">&#x2605;&#x2605;&#x2605;&#x2605;&#x2605;</span> 391 reviews</p>
+          <p>Piazza Barberini 11, Rome, Italy</p>
+        </div>
+      </div>
+      <div class="col-lg-6 location">
+        <div class="panel-body">
+          <h3>Le Domus del Senato</h3>
+          <p class="rating"><span class="badge">&#x2605;&#x2605;&#x2605;&#x2605;&#x2605;</span> 221 reviews</p>
+          <p>Via Tor de Conti 22, Rome, Italy</p>
+        </div>
+      </div>
+      <div class="col-lg-6 location">
+        <div class="panel-body">
+          <h3>Albergo di San Paolo</h3>
+          <p class="rating"><span class="badge">&#x2605;&#x2605;&#x2605;&#x2605;&#x2605;</span> 198 reviews</p>
+          <p>Via delle Alpi 4, Rome, Italy</p>
+        </div>
+      </div>
     </div>
   </div>
 </body>

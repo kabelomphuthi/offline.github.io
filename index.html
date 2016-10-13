@@ -1,147 +1,57 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name=viewport content="width=device-width, initial-scale=1">
-  <title>UpUp - The Offline First Library</title>
-  <meta name="description" content="A JavaScript library that makes sure your users can always access your site, even when offline." />
-  <meta property="og:image" content="https://www.talater.com/upup/img/upup-screenshot.jpg"/>
-  <meta property="og:title" content="UpUp - Offline First in 1 line of Javascript"/>
-  <meta property="og:description" content="Let users visit your site, even when they're on a plane over the Atlantic, or 20,000 leagues under the sea. #OfflineFirst"/>
-  <meta property="og:url" content="http://upup.rocks"/>
-  <meta property="og:site_name" content="UpUp"/>
-  <meta property="fb:admins" content="568390229" />
+  <title>Lonely Globe Advisor</title>
   <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/online.min.css">
-  <link href='//fonts.googleapis.com/css?family=Lato:300,400,700,300italic' rel='stylesheet' type='text/css'>
-  <meta http-equiv="cache-control" content="max-age=0" />
-  <meta http-equiv="cache-control" content="no-cache" />
-  <meta http-equiv="expires" content="0" />
-  <meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
-  <meta http-equiv="pragma" content="no-cache" />
+  <link rel="stylesheet" href="css/lonelyglobe.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 </head>
 <body>
-  <header class="container-fluid">
-    <img class="img-responsive center-block" src="img/logo.png" alt="upup">
-    <h1 class="center-block">a tiny script that makes sure your site is always there for your users</h1>
-    <h2 class="center-block">even when they're on a plane, or 20,000 leagues under the sea</h2>
-  </header>
-  <div class="show-and-tell">
-    <video class="img-responsive center-block" onplaying="this.controls=false;" onclick="this.play();" loop="true" src="offline-first-with-upup.mp4" poster="img/upup-poster.jpg"></video>
+  <div class="jumbotron text-center">
+    <h1>Top Hotels in Rome</h1>
   </div>
-
-  <div class="container narrower">
+  <div class="container">
     <div class="row">
-      <p>Your users are no longer sitting at their desktops, with a wire connecting them to the internet.</p>
-      <p>They are visiting your site from a phone in an elevator, from their tablet on the subway, or on their laptop while they sit cramped into seat 25 E.</p>
-      <p>This is why modern browsers support ServiceWorkers, a new technology which lets you serve your content to your users, even when they are offline.</p>
-      <p>UpUp is a free, open source project which makes using this modern magic as simple as calling one command.</p>
-  <pre><code>
-  <span class="html">&lt;script src="<strong>/upup.min.js</strong>"&gt;&lt;/script&gt;
-  &lt;script&gt;</span>
-    UpUp.start({
-      '<strong>content-url</strong>': '<strong>offline.html</strong>' <span class="comment">// show this page to offline users</span>
-    });
-  <span class="html">&lt;/script&gt;</span>
-  </code></pre>
-
-      <p>While easy to pick up, UpUp is powerful enough to support anything from showing simple messages, to making fully functional single page applications available offline, with data customized for each of your users.</p>
-
-      <h4>Ready to get started?</h4>
-
-      <div class="row home-icons-row">
-        <div class="col-sm-4">
-          <a href="getting-started-with-offline-first.html">
-            <div class="callout callout-3">
-              <img src="img/icon-tutorial.png" alt="Offline First Tutorial">Try the Tutorial
-            </div>
-          </a>
-        </div>
-        <div class="col-sm-4">
-          <a href="https://github.com/TalAter/UpUp/blob/master/docs/README.md">
-            <div class="callout callout-1">
-              <img src="img/icon-docs.png" alt="UpUp API Docs">API Docs
-            </div>
-          </a>
-        </div>
-        <div class="col-sm-4">
-          <a href="https://github.com/TalAter/UpUp/">
-            <div class="callout callout-2">
-              <img src="img/icon-source.png" alt="OfflineFirst on GitHub">GitHub
-            </div>
-          </a>
+      <div class="col-lg-6 location">
+        <div class="panel-body">
+          <img src="img/hotel_1.jpg" class="img-thumbnail">
+          <h3>Villa Domus</h3>
+          <p class="rating"><span class="badge">&#x2605;&#x2605;&#x2605;&#x2605;&#x2605;</span> 324 reviews</p>
+          <p>Via Piacenza 9, Rome, Italy</p>
         </div>
       </div>
-
-
-      <p>UpUp is a <strong>free</strong>, <strong>open source</strong>, community effort.</p>
-      <p>Please help us start the <strong>Offline First</strong> revolution:</p>
-      <div class="row home-icons-row">
-        <div class="col-sm-4 text-center">
-          <iframe src="https://ghbtns.com/github-btn.html?user=TalAter&repo=UpUp&type=star&count=true&size=large" frameborder="0" scrolling="0" width="160px" height="30px"></iframe>
-        </div>
-        <div class="col-sm-4 text-center">
-          <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://upup.rocks" data-text="Control how users see your site… even when they're over the Atlantic or 20k leagues under the sea" data-size="large" data-hashtags="OfflineFirst" data-counturl="https://www.talater.com/upup/">Tweet</a>
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-        </div>
-        <div class="col-sm-4 text-center">
-          <div id="fb-root"></div>
-          <script>(function(d, s, id) {
-            var js, fjs = d.getElementsByTagName(s)[0];
-            if (d.getElementById(id)) return;
-            js = d.createElement(s); js.id = id;
-            js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.4";
-            fjs.parentNode.insertBefore(js, fjs);
-          }(document, 'script', 'facebook-jssdk'));</script>
-          <div class="fb-like" data-href="http://upup.rocks" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div>
+      <div class="col-lg-6 location">
+        <div class="panel-body">
+          <img src="img/hotel_2.jpg" class="img-thumbnail">
+          <h3>Hotel Trivelli</h3>
+          <p class="rating"><span class="badge">&#x2605;&#x2605;&#x2605;&#x2605;&#x2605;</span> 391 reviews</p>
+          <p>Piazza Barberini 11, Rome, Italy</p>
         </div>
       </div>
-
+      <div class="col-lg-6 location">
+        <div class="panel-body">
+          <img src="img/hotel_3.jpg" class="img-thumbnail">
+          <h3>Le Domus del Senato</h3>
+          <p class="rating"><span class="badge">&#x2605;&#x2605;&#x2605;&#x2605;&#x2605;</span> 221 reviews</p>
+          <p>Via Tor de Conti 22, Rome, Italy</p>
+        </div>
+      </div>
+      <div class="col-lg-6 location">
+        <div class="panel-body">
+          <img src="img/hotel_4.jpg" class="img-thumbnail">
+          <h3>Albergo di San Paolo</h3>
+          <p class="rating"><span class="badge">&#x2605;&#x2605;&#x2605;&#x2605;&#x2605;</span> 198 reviews</p>
+          <p>Via delle Alpi 4, Rome, Italy</p>
+        </div>
+      </div>
     </div>
   </div>
-
-  <div class="container footer text-center narrower">
-    <hr>
-    <div class="row menu">
-      <ul class="nav nav-pills nav-justified">
-        <li>Home</li>
-        <li><a href="getting-started-with-offline-first.html">Tutorial</a></li>
-        <li><a href="https://github.com/TalAter/UpUp/raw/master/dist/upup.zip">Download UpUp.js</a></li>
-        <li><a href="https://github.com/TalAter/UpUp/blob/master/docs/README.md">API Docs</a></li>
-        <li><a href="https://github.com/TalAter/UpUp/">GitHub</a></li>
-        <li><a href="https://twitter.com/TalAter">Twitter</a></li>
-        <li><a href="mailto:tal@talater.com">Email</a></li>
-      </ul>
-    </div>
-    <div class="row">
-      <p>&copy; 2016 Tal Ater. All rights reserved. The <a href="https://github.com/TalAter/UpUp">UpUp source code</a> is free to use under the <a href="https://github.com/TalAter/UpUp/blob/master/LICENSE">MIT license</a>.</p>
-    </div>
-  </div>
-
-  <!-- This is our simple implementation of UpUp for this site -->
   <script src="upup.min.js"></script>
   <script>
-    // Let's turn on debugging messages
-    UpUp.debug();
-
-    // Let's start UpUp with some basic settings
     UpUp.start({
       'content-url': 'offline.html',
-      'assets': ['css/offline.css', 'css/bootstrap.min.css', 'img/mb-offline.png', 'img/logo.png', 'img/sunset.jpg']
+      'assets': ['css/bootstrap.min.css', 'css/offline.css']
     });
-  </script>
-
-  <!-- Unrelated sugar to make the page look nice -->
-  <script src="js/online.js"></script>
-  <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-    ga('create', 'UA-24775009-1', 'auto');
-    ga('send', 'pageview');
   </script>
 </body>
 </html>
